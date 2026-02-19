@@ -1,0 +1,31 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "google-vertex-anthropic/claude-opus-4-6@default",
+  "plugin": [
+    "opencode-ntfy.sh"
+  ],
+  "provider": {
+    "google-vertex-anthropic": {
+      "options": {
+        "project": "{env:OPENCODE_GCP_VERTEX_PROJECT}",
+        "location": "us-east5"
+      }
+    }
+  },
+  "mcp": {
+    "jira": {
+      "type": "local",
+      "command": [
+        "podman",
+        "run",
+        "--rm",
+        "-i",
+        "--env-file",
+        "{env:HOME}/.config/mcp/jira-mcp.env",
+        "-v",
+        "/etc/pki/ca-trust/source/anchors/2022-IT-Root-CA.pem:/etc/ssl/certs/ca-certificates.crt:ro",
+        "ghcr.io/sooperset/mcp-atlassian:latest"
+      ]
+    }
+  }
+}

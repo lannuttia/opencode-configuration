@@ -1,0 +1,6 @@
+{
+       "$schema": "node_modules/opencode-ntfy.sh/notification-ntfy.schema.json",
+       "backend": {
+               "topic": "{env:OPENCODE_NTFY_TOPIC}"
+       }
+}
