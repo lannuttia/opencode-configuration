@@ -4,6 +4,7 @@
   "plugin": [
     "opencode-ntfy.sh"
   ],
+  "theme": "catppuccin",
   "provider": {
     "google-vertex-anthropic": {
       "options": {
