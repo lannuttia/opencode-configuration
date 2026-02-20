@@ -27,14 +27,14 @@ A shareable, installable configuration for [OpenCode](https://opencode.ai/) that
 ### Quick install (clone + setup)
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/lannuttia/opencode-config/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/lannuttia/opencode-configuration/main/install.sh | sh
 ```
 
 Or clone manually and run the installer:
 
 ```sh
-git clone https://github.com/lannuttia/opencode-config.git
-cd opencode-config
+git clone https://github.com/lannuttia/opencode-configuration.git
+cd opencode-configuration
 sh install.sh --no-clone
 ```
 
