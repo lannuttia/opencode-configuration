@@ -56,12 +56,6 @@ OPENCODE_GCP_VERTEX_PROJECT=<your-gcp-project-id>
 OPENCODE_NTFY_TOPIC=<your-ntfy-topic>           # optional
 ```
 
-Then install the notification plugin dependency:
-
-```sh
-bun install
-```
-
 ## License
 
 [MIT](LICENSE)
